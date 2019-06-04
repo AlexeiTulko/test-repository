@@ -1,11 +1,6 @@
-my_list = [10, 0,3,10,90,5]
-number1 = 0
-number2 = 0
-for i in range(len(my_list)):
-    if my_list[i] > number2:
-        number2 = my_list[i]
-    if my_list[i] > number1:
-        k = number2
-        number2 = number1
-        number1 = k
-print(number1, number2)
+listing = [] #two biggest numbers
+for i in range(int(input('Listing = '))):
+    listing.append(int(input('{}number = '.format(i+1))))
+two_biggest = sorted(listing, reverse=True)[0:2]
+print(listing)
+print(two_biggest)
