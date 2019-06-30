@@ -6,6 +6,7 @@ M = int(input('Month = '))
 D = int(input('Day = '))
 
 x = calendar.weekday(Y, M, D)
+# можно было использовать calendar.day_name
 if x == 0:
     print('Monday')
 elif x == 1:

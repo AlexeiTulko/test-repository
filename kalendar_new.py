@@ -2,11 +2,12 @@ import calendar
 
 
 def search(year, month, dd):
-    while year >= 1970 and 1 <= month <= 12 and dd == 1:
+    while year >= 1970 and 1 <= month <= 12 and dd == 1:  # and dd == 1 - лишний, потому что dd не изменяется внутри цикла
         yield year, month, dd
         month -= 1
         if not month:
             year -= 1
+            month = 12  # если ты переходишь в следующий год, то значение месяца нужно сбросить
 
 
 latest_year, latest_month, ddd = 2019, 6, 1
