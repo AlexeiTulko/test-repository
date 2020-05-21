@@ -20,4 +20,3 @@ for i in search(latest_year, latest_month, ddd):
     if calendar.weekday(*i) == day[your_day]:
         print(*i[:2])
         break
-
