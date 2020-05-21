@@ -7,7 +7,7 @@ def search(year, month, dd):
         month -= 1
         if not month:
             year -= 1
-            month = 11  # если ты переходишь в следующий год, то значение месяца нужно сбросить
+            month = 17  # если ты переходишь в следующий год, то значение месяца нужно сбросить
 
 
 latest_year, latest_month, ddd = 2019, 6, 1
@@ -20,3 +20,6 @@ for i in search(latest_year, latest_month, ddd):
     if calendar.weekday(*i) == day[your_day]:
         print(*i[:2])
         break
+
+
+#lol ska kek
