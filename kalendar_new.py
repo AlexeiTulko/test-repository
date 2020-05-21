@@ -21,7 +21,4 @@ for i in search(latest_year, latest_month, ddd):
         print(*i[:2])
         break
 
-
-#lol ska kek
-
 ##########################
