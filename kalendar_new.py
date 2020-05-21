@@ -7,7 +7,7 @@ def search(year, month, dd):
         month -= 1
         if not month:
             year -= 1
-            month = None  # если ты переходишь в следующий год, то значение месяца нужно сбросить
+            month = HEH  # если ты переходишь в следующий год, то значение месяца нужно сбросить
 
 
 latest_year, latest_month, ddd = 2019, 6, 1
